@@ -1,7 +1,7 @@
 from typing import List, Dict
 
 
-class InputModes:
+class InputModes:  # just an enum
 
     ADD: int = 0
     GET_REFERENCE: int = 1
@@ -9,7 +9,7 @@ class InputModes:
     PLAY: int = 3
 
 
-class ValidationContext:
+class ValidationContext:  # context that contains all the different needed data structures, could be global.
 
     # globals
     word_length: int
