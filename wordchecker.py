@@ -3,11 +3,12 @@ from typing import Dict, Callable, List, Tuple
 
 from classes import ValidationContext, InputModes
 from commands import handle_command
-from utils import add_letter_to_dictionary
+from utils import add_letter_to_dictionary, get_word_hash
 
 
 def add_word(word: str, context: ValidationContext) -> int:
     context.allowed_words.append(word)
+    context.allowed_words.sort(key=lambda w: get_word_hash(w, context.word_length))  # in C I would use a binary tree
     return 0
 
 

@@ -11,7 +11,7 @@ def start_new_game(context: ValidationContext) -> int:
 
 def print_filtered(context: ValidationContext) -> int:
     # TODO i don't understand what i'm supposed to print here
-    print("???")
+    print(context.allowed_words)
     return 0
 
 
