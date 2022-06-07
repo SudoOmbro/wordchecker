@@ -1,5 +1,5 @@
 from copy import copy
-from typing import Dict, Callable, List, Tuple
+from typing import Dict, Callable, List
 
 from classes import ValidationContext, InputModes
 from commands import handle_command
